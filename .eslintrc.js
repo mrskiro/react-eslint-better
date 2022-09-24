@@ -31,13 +31,11 @@ module.exports = {
     "no-template-curly-in-string": "error",
     "no-unmodified-loop-condition": "error",
     "arrow-body-style": ["error", "as-needed"],
-    camelcase: ["error"],
-    complexity: ["error", { max: 2 }],
+    complexity: ["error", { max: 8 }],
     "default-case": "error",
     "default-case-last": "error",
     eqeqeq: "error",
     "func-style": ["error", "declaration", { allowArrowFunctions: true }],
-    "logical-assignment-operators": ["error"],
     "max-classes-per-file": ["error", 1],
     "max-lines": [
       "error",
@@ -65,6 +63,9 @@ module.exports = {
     "prefer-template": "error",
     yoda: "error",
 
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+
     "@typescript-eslint/consistent-type-definitions": ["warn", "type"],
     "@typescript-eslint/method-signature-style": "warn",
     "@typescript-eslint/no-confusing-void-expression": "warn",
@@ -74,6 +75,7 @@ module.exports = {
     "@typescript-eslint/default-param-last": "warn",
     "@typescript-eslint/no-duplicate-imports": "warn",
 
+    "react/prop-types": "off",
     "react/boolean-prop-naming": [
       "warn",
       { rule: "^(is|has)[A-Z]([A-Za-z0-9]?)+" },
@@ -106,7 +108,6 @@ module.exports = {
     "react/jsx-handler-names": ["error"],
     "react/jsx-max-depth": ["error", { max: 20 }],
     "react/jsx-no-constructed-context-values": "warn",
-    "react/jsx-no-leaked-render": ["warn", { validStrategies: ["coerce"] }],
     "react/jsx-no-useless-fragment": ["error", { allowExpressions: true }],
     "react/jsx-pascal-case": [
       "error",
